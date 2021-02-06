@@ -5,8 +5,8 @@ const controller = require('../control/userControl')
 const router = new Router()
 
 //for test
-router.get('/', async ctx => {
-	ctx.response.body = `<h2> Index </h2>
+router.get('/', async (ctx) => {
+  ctx.response.body = `<h2> Index </h2>
      <form action="/login" method="post">
        <p>name: <input name="name"> </p>
        <p>password: <input name="password" type="password"></p>
@@ -14,8 +14,8 @@ router.get('/', async ctx => {
      </form>
 `
 })
-router.get('/res', async ctx => {
-	ctx.response.body = `<h2> Index </h2>
+router.get('/res', async (ctx) => {
+  ctx.response.body = `<h2> Index </h2>
      <form action="/register" method="post">
        <p>name: <input name="name"> </p>
        <p>password: <input name="password" type="password"></p>
